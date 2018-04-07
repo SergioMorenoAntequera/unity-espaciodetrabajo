@@ -252,7 +252,7 @@ SphereCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144624830}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -290,7 +290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuerzaInicial: 10
-  transform: {fileID: 144624834}
   rigidbody: {fileID: 144624836}
 --- !u!54 &144624836
 Rigidbody:
@@ -305,7 +304,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 8
   m_CollisionDetection: 0
 --- !u!1 &307486061
 GameObject:
@@ -320,7 +319,7 @@ GameObject:
   - component: {fileID: 307486062}
   m_Layer: 0
   m_Name: Decoracion1-Suelo
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,7 +364,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 307486061}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -451,7 +450,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361004343}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -505,7 +504,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!1 &388304659
 GameObject:
@@ -520,7 +519,7 @@ GameObject:
   - component: {fileID: 388304660}
   m_Layer: 0
   m_Name: Decoracion4-ParedIzq
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,7 +603,7 @@ GameObject:
   - component: {fileID: 1257804019}
   m_Layer: 0
   m_Name: Decoracion2-Techo
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -649,7 +648,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1257804018}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -735,7 +734,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356753567}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -789,7 +788,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!1 &1431253368
 GameObject:
@@ -804,7 +803,7 @@ GameObject:
   - component: {fileID: 1431253369}
   m_Layer: 0
   m_Name: Decoracion6-FondoInv
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,7 +887,7 @@ GameObject:
   - component: {fileID: 1774535320}
   m_Layer: 0
   m_Name: Decoracion5-Fondo
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -972,7 +971,7 @@ GameObject:
   - component: {fileID: 1909740540}
   m_Layer: 0
   m_Name: Decoracion3-ParedDer
-  m_TagString: Untagged
+  m_TagString: Decoracion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

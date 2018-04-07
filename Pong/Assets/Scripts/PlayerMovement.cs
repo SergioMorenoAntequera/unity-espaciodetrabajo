@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     public float aceleracion = 0f;
     private Vector3 posicionInicial = new Vector3(19f, 0, 0);
     private Vector3 tamañoInicial = new Vector3(0.5f, 4, 1);
+    private Vector3 rotacionInicial = Vector3.zero;
 
     /***********************POSICIONES(esto no haría falta)********************************/
     //Hay 3 putos objetos, y me da pereza hacer otro Script
@@ -82,4 +83,5 @@ public class PlayerMovement : MonoBehaviour {
             }
         }
     }
+
 }
