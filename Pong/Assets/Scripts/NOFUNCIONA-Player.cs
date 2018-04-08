@@ -82,6 +82,10 @@ public class PlayerMovement : MonoBehaviour {
                 }
             }
         }
+        if (velocidad > 1500f)
+        {
+            velocidad = 700f;
+        }
     }
 
 }

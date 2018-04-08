@@ -3,7 +3,7 @@
 public class BallMovement : MonoBehaviour {
 
     private Vector3 posicionInicial = Vector3.zero;
-    public float fuerzaInicial = 0f;
+    public float VelocidadInicial = 0f;
     public Rigidbody rigidbody;
     int direccionX;
     int direccionY;
@@ -21,11 +21,11 @@ public class BallMovement : MonoBehaviour {
         {
             direccionY = -1;
         }
-        rigidbody.velocity = new Vector3(fuerzaInicial*direccionX, fuerzaInicial*direccionY, 0);
+        rigidbody.velocity = new Vector3(VelocidadInicial*direccionX, VelocidadInicial*direccionY, 0);
     }
 	
 	void Update () {
-
+        rigidbody.velocity += rigidbody.velocity*0.01f * Time.deltaTime;
+        Debug.Log(rigidbody.velocity);
     }
-
 }

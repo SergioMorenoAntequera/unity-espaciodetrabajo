@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fe208774ff5b354692e957552ce7542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuerzaInicial: 10
+  VelocidadInicial: 15
   rigidbody: {fileID: 144624836}
 --- !u!54 &144624836
 Rigidbody:
@@ -398,7 +398,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 361004347}
-  - component: {fileID: 361004349}
   - component: {fileID: 361004348}
   - component: {fileID: 361004346}
   - component: {fileID: 361004345}
@@ -450,7 +449,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 361004343}
-  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -484,28 +483,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 361004343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d67474c83232b41ad11f910a900839, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc2b22fe8bdb2548a7e0c24330bd2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 361004347}
-  rigidbody: {fileID: 361004349}
-  velocidad: 700
-  aceleracion: 10
---- !u!54 &361004349
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361004343}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0
+  velocity: 0.3
+  Arriba: 273
+  Abajo: 274
 --- !u!1 &388304659
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +666,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1356753571}
-  - component: {fileID: 1356753573}
   - component: {fileID: 1356753572}
   - component: {fileID: 1356753570}
   - component: {fileID: 1356753569}
@@ -734,7 +717,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356753567}
-  m_Material: {fileID: 13400000, guid: 0be7aae79f79cfd4f811dec3be659888, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -768,28 +751,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1356753567}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90d67474c83232b41ad11f910a900839, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fc2b22fe8bdb2548a7e0c24330bd2a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   transform: {fileID: 1356753571}
-  rigidbody: {fileID: 1356753573}
-  velocidad: 700
-  aceleracion: 10
---- !u!54 &1356753573
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1356753567}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 122
-  m_CollisionDetection: 0
+  velocity: 0.3
+  Arriba: 119
+  Abajo: 115
 --- !u!1 &1431253368
 GameObject:
   m_ObjectHideFlags: 0
