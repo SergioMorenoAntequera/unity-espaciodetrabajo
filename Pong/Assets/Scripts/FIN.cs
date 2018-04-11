@@ -10,21 +10,20 @@ public class FIN : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (textIzq.text == "1") {
+		if (textIzq.text == "5") {
 			textIzq.enabled = false;
 			textoDer.enabled = false;
 			won.enabled = true;
 			bola.SetActive(false);
-			won.text = "¡Player1 gana!";
-
+			won.text = "¡ Player1 gana !";
 		}
 
-		if (textoDer.text == "1") {
+		if (textoDer.text == "5") {
 			textIzq.enabled = false;
 			textoDer.enabled = false;
 			won.enabled = true;
 			bola.SetActive(false);
-			won.text = "¡Player2 gana!";
+			won.text = "¡ Player2 gana !";
 		}
 	}
 }

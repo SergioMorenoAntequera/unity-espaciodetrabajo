@@ -1,27 +1,27 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 
-public class MarcadorIzq : MonoBehaviour {
-
+public class MarcadorIzq : MonoBehaviour
+{
+    //private Collision collisionInfo;
 	public Text texto;
-	public Transform bola;
-	bool dentro = false;
+	//public Transform bola;
 	int puntuacion = 0;
+    //private BallMovement ballMovement;
 
-	// Update is called once per frame
-	void Start() {
-		texto.text = ""+puntuacion;
-		dentro = false;
+    // Update is called once per frame
+    void Start()
+    {
+        texto.text = puntuacion.ToString();
 	}
 
-	void Update () {
-		if (bola.position.x > 21f && !dentro){
-			puntuacion++;
-			dentro = true;
-		}
+    void Update()
+    {
+        texto.text = puntuacion.ToString();
+    }
 
-		if (dentro) {
-			Invoke ("Start", 0.2f);
-		}
-	}
+    public void add()
+    {
+        puntuacion++;
+    }
 }
