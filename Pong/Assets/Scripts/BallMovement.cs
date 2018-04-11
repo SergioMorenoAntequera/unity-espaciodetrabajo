@@ -10,9 +10,9 @@ public class BallMovement : MonoBehaviour {
 	int direccionX;
     int direccionY;
 
-    void Start () {
+    public void Start () {
 
-		transform.position = new Vector3 (0, 0, 0);
+        transform.position = new Vector3 (0, 0, 0);
 		rigidbody.velocity = (Vector3.zero);
         //Darle una direccion aleatoria en el eje x, y
         direccionX = Random.Range(0, 2);
@@ -28,6 +28,7 @@ public class BallMovement : MonoBehaviour {
         rigidbody.velocity = new Vector3(velocidadInicial*direccionX, velocidadInicial*direccionY, 0);
     }
 	
+    //Va aumentando la velocidad
 	void Update () {
 		rigidbody.velocity += rigidbody.velocity*aceleracion * Time.deltaTime;
     }
@@ -35,13 +36,13 @@ public class BallMovement : MonoBehaviour {
 	//Para que cuando toque vuelva al principio
 	public int OnCollisionEnter (Collision collisionInfo){
 		if (collisionInfo.collider.name == ("Decoracion3-ParedDer")) {
-			Invoke ("Start", 0);
-			return 1;
+            Start();
+            return 1;
 		}
 		if (collisionInfo.collider.name == ("Decoracion4-ParedIzq")) {
-			Invoke ("Start", 0);
-			return 2;
+            Start();
+            return 2;
 		}
-		return 0;
+        return 0;
 	}
 }
