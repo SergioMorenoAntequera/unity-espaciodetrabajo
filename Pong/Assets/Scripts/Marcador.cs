@@ -1,14 +1,13 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
 
-public class Marcador : MonoBehaviour {
-
-    private Collision collisionInfo;
+public class Marcador : MonoBehaviour
+{
+    //private Collision collisionInfo;
     public Text texto;
-	public Transform bola;
-	bool dentro = false;
+	//public Transform bola;
 	int puntuacion = 0;
-    private BallMovement ballMovement;
+    //private BallMovement ballMovement;
 
 	// Update is called once per frame
 	void Start()
@@ -16,12 +15,9 @@ public class Marcador : MonoBehaviour {
 		texto.text = puntuacion.ToString();
     }
 
-	void Update ()
+    public void add()
     {
-		if (ballMovement.OnCollisionEnter(collisionInfo) == 2)
-        {
-            Start();
-            ballMovement.Start();
-        }
-	}
+        puntuacion++;
+        texto.text = puntuacion.ToString();
+    }
 }

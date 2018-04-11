@@ -34,15 +34,18 @@ public class BallMovement : MonoBehaviour {
     }
 
 	//Para que cuando toque vuelva al principio
-	public int OnCollisionEnter (Collision collisionInfo){
+	public void OnCollisionEnter (Collision collisionInfo){
 		if (collisionInfo.collider.name == ("Decoracion3-ParedDer")) {
+            //var m = GameObject.FindGameObjectWithTag("puntosIzq").GetComponent<MarcadorIzq>();
+            var m = GameObject.FindObjectOfType<MarcadorIzq>();
+            m.add();
             Start();
-            return 1;
-		}
+        }
 		if (collisionInfo.collider.name == ("Decoracion4-ParedIzq")) {
+            //var m = GameObject.FindGameObjectWithTag("puntosDer").GetComponent<Marcador>();
+            var m = GameObject.FindObjectOfType<Marcador>();
+            m.add();
             Start();
-            return 2;
-		}
-        return 0;
+        }
 	}
 }
