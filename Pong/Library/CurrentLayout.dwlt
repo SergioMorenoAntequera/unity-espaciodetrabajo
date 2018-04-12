@@ -397,9 +397,15 @@ MonoBehaviour:
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 4e250000
     m_LastClickedID: 9550
     m_ExpandedIDs: 00000000d224000000ca9a3bffffff7f
+=======
+    m_SelectedIDs: 50250000
+    m_LastClickedID: 9552
+    m_ExpandedIDs: 00000000d424000000ca9a3bffffff7f
+>>>>>>> Pong_Terminado
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -427,7 +433,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d2240000
+=======
+    m_ExpandedIDs: 00000000d4240000
+>>>>>>> Pong_Terminado
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -543,7 +553,11 @@ MonoBehaviour:
     height: 425
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 
+=======
+    m_SelectedIDs: 4e060000
+>>>>>>> Pong_Terminado
     m_LastClickedID: 0
     m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
@@ -627,7 +641,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.24771203, y: 0.35491535, z: 0.098107934, w: -0.8961298}
     speed: 2
+<<<<<<< HEAD
     m_Value: {x: 0.24771203, y: 0.35491538, z: 0.098107934, w: -0.8961298}
+=======
+    m_Value: {x: 0.24771205, y: 0.35491538, z: 0.09810794, w: -0.89612985}
+>>>>>>> Pong_Terminado
   m_Size:
     m_Target: 325.8161
     speed: 2
