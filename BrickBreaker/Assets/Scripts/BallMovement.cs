@@ -20,6 +20,7 @@ public class BallMovement : MonoBehaviour {
 
     void GiveRandomDirection()
     {
+        rigidbody.velocity = Vector3.zero;
         if (Random.Range(0, 2) == 1)
         {
             rigidbody.velocity += new Vector3(velocidad, velocidad, 0);
@@ -32,10 +33,17 @@ public class BallMovement : MonoBehaviour {
 
     public void OnCollisionEnter(Collision colliderInfo)
     {
+        //Para que rompa los bloques
         if (colliderInfo.collider.tag == "Bloque")
         {
             var m = GameObject.FindObjectOfType<DestruirCubos>();
-            m.Destruir();
+            m.Destruir(colliderInfo.collider.name);
+        }
+
+        //Para perder al tocar el suelo
+        if (colliderInfo.collider.name == "Suelo")
+        {
+            Start();
         }
     }
 }

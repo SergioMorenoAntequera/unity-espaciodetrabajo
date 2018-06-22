@@ -1,19 +1,14 @@
 ﻿using UnityEngine;
 
 public class DestruirCubos : MonoBehaviour {
-	
-    Collision colliderInfo;
 
-    // Update is called once per frame
+    GameObject objeto;
 
-    
-
-    public void Destruir()
+    public void Destruir(string aDestruir)
     {
-        /*var m = GameObject.FindObjectOfType<BallMovement>();
-        m.OnCollisionEnter(colliderInfo);
-        var aDestruir = colliderInfo.collider.gameObject;*/
 
-        Destroy(gameObject);
+        objeto = GameObject.Find(aDestruir);
+        Destroy(objeto);
+
     }
 }
