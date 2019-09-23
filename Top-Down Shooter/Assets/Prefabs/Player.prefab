@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1656845848387919345}
   - component: {fileID: 1656845848387919344}
-  - component: {fileID: 1656845848387919346}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -81,49 +80,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!68 &1656845848387919346
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1656845848387919351}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.14825688, y: -0.07095822}
-  - {x: 0.14991818, y: -0.14060397}
-  - {x: 0.103705324, y: -0.21718553}
-  - {x: 0.026825074, y: -0.26555142}
-  - {x: -0.028179929, y: -0.26586264}
-  - {x: -0.10948677, y: -0.22427745}
-  - {x: -0.14964995, y: -0.14533876}
-  - {x: -0.14850512, y: -0.079333544}
-  - {x: -0.12240457, y: -0.023739303}
-  - {x: -0.08236636, y: 0.0036783994}
-  - {x: -0.08055963, y: 0.091991566}
-  - {x: -0.061134458, y: 0.11921301}
-  - {x: -0.064434625, y: 0.21838112}
-  - {x: -0.04139431, y: 0.2654967}
-  - {x: 0.04181561, y: 0.26456392}
-  - {x: 0.05757711, y: 0.23211019}
-  - {x: 0.057032514, y: 0.108838335}
-  - {x: 0.081360914, y: 0.08870164}
-  - {x: 0.07942712, y: 0.0145702725}
-  - {x: 0.00436036, y: 0.1895878}
-  - {x: -0.07803462, y: 0.0043372153}
-  - {x: -0.10288147, y: -0.2215706}
-  - {x: 0.101794116, y: -0.21355453}
-  - {x: 0.10506058, y: -0.051334955}
-  - {x: -0.041398842, y: -0.16866405}
-  - {x: 0.08310952, y: 0.019621795}
-  - {x: 0.14770292, y: -0.06963932}
 --- !u!1 &1656845848669867337
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,9 +89,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1656845848669867339}
-  - component: {fileID: 1347716317}
+  - component: {fileID: 1306228473}
+  - component: {fileID: 1306228472}
   - component: {fileID: 1656845848669867338}
   - component: {fileID: 1656845848669867332}
+  - component: {fileID: 1306228470}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -159,27 +117,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &1347716317
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!61 &1306228473
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1656845848669867337}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0051383376, y: 0.15415025}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.61976194, y: 2.3154182}
+  m_EdgeRadius: 0
+--- !u!58 &1306228472
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656845848669867337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02055341, y: -0.59604895}
+  serializedVersion: 2
+  m_Radius: 0.69525754
 --- !u!114 &1656845848669867338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b15e1b02aa7a7242b8b1b0647c46ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
+  movementSpeed: 13
 --- !u!114 &1656845848669867332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +185,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sword: {fileID: 7128713200308271970, guid: d0ce8fc71ac733d45920413c996154bd, type: 3}
+--- !u!114 &1306228470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656845848669867337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d073469de0f7c748a70fdc93a34400e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1656845849035624819
 GameObject:
   m_ObjectHideFlags: 0

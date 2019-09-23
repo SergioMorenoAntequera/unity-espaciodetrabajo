@@ -16,6 +16,9 @@ public class EnemyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(player.transform.localPosition * Time.deltaTime * properties.speed);
+        Vector3 direcction = player.transform.localPosition - transform.localPosition;
+        direcction = Vector3.Normalize(direcction);
+
+        this.gameObject.transform.Translate(direcction * properties.speed * Time.deltaTime);
     }
 }

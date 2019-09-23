@@ -50,17 +50,25 @@ public class SwordScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //To avoid destroying the object at the beggining
-        if (other.gameObject.name.Equals("Cannon"))
+        if (other.gameObject.name.Equals("Player"))
             return;
 
         //If it collides with an Alien
         if (other.gameObject.name.Contains("Alien"))
         {
-            Rigidbody2D alienRb = other.gameObject.GetComponent<Rigidbody2D>();
-            //  alienRb.AddForce(new Vector2(100, 10));
-
+            other.gameObject.GetComponent<Enemy>().hp--;
+            Debug.Log("hp: " + other.gameObject.GetComponent<Enemy>().hp);
+            if (other.gameObject.GetComponent<Enemy>().hp <= 0)
+            {
+                
+                Destroy(other.gameObject);
+                
+            }
+            
+            //Rigidbody2D alienRb = other.gameObject.GetComponent<Rigidbody2D>();
+            //alienRb.AddForce(new Vector2(100, 10));
         }
-        
-        //Destroy(gameObject);
+
+        Destroy(gameObject);
     }
 }
