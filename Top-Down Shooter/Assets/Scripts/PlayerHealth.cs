@@ -27,8 +27,6 @@ public class PlayerHealth : MonoBehaviour
         // 3- Make the sprite blink
         if (!_canGetHurted && _timer > 0)
         {
-            Debug.Log("Dentro de hacerme daño");
-
             _timer = Time.deltaTime;
             if (_timer < 2f && _timer > 1.5f || _timer < 1f && _timer > 0.5f)
             {

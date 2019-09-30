@@ -19,7 +19,7 @@ public class Enemy : MonoBehaviour
         if (spriteElement.sprite.name.Contains("Alien1"))
         {
             hp = 1;
-            speed = 5;
+            speed = 10;
             type = "Type number 1";
         }
 

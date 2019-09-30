@@ -6,7 +6,7 @@ public class EnemyGenerator : MonoBehaviour
 {
     private GameObject player;
     public GameObject enemyType1, enemyType2;
-    private float _distanceX = 25f, _distanceY = 10f;
+    private float _distanceX = 25f, _distanceY = 12f;
     private float timer = 0, maxTimer = 2f;
     private bool canSpawn = true;
 
@@ -23,7 +23,6 @@ public class EnemyGenerator : MonoBehaviour
         //1- Get the position
         //2- Assign the coordinates depending of the position 
         
-
         if (canSpawn)
         {
             float position = Random.Range(0, 4); //0 up, 1 right, 2 down, 3 left
